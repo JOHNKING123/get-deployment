@@ -2,11 +2,12 @@
   shell: docker ps |grep datasearch|awk '{print $1}'
   register: appContainerId
   ignore_errors: True
-- name: rmove_app
-  shell: '
-        docker kill datasearch
-        docker rm datasearch
-  '
+- name: rmove_app_1
+  shell: docker kill datasearch
+  when: appContainerId != ''
+  ignore_errors: True
+- name: rmove_app_1
+  shell: docker rm  datasearch
   when: appContainerId != ''
   ignore_errors: True
 - name: print_var
