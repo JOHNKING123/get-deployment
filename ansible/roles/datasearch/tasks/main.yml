@@ -16,4 +16,5 @@
   shell: 'docker run -d -p 8882:8881 --name datasearch datasearch'
 - name: remove_old_images
   shell: docker images|grep none|xargs docker rmi -f
+  ignore_errors: True
 
