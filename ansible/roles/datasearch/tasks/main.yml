@@ -1,0 +1,3 @@
+- name: create_app
+  shell: 'docker run -d -p 8882:8881 datasearch'
+

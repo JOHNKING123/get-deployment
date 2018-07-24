@@ -1,0 +1,2 @@
+- name: copyFile
+  copy: src=test1 dest=/opt/{{ dest_name }} owner=root group=root
