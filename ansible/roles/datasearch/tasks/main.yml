@@ -7,8 +7,10 @@
         docker kill datasearch
         docker rm datasearch
   '
-  when: appContainerId != '' and appContainerId != null
+  when: appContainerId != ''
   ignore_errors: True
+- name: print_var
+  shell: echo {{ appContainerId }}
 - name: create_app
   shell: 'docker run -d -p 8882:8881 --name datasearch datasearch'
 
