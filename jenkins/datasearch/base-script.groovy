@@ -4,6 +4,7 @@ node {
 
     stage('Get Code') {
         echo env.helloStr
+        echo "test1"
         git credentialsId: '641bff4f-fa03-443e-81f4-b01bb9e8b769', url: 'https://github.com/JOHNKING123/DataSearcher.git'
     }
 
@@ -14,6 +15,7 @@ node {
         }
 
     }
+
 
     stage('docker build'){
         sh "docker build -t datasearch ./datasercher"
