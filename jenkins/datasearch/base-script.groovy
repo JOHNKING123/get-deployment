@@ -15,8 +15,6 @@ node {
         }
 
     }
-
-    
     
 
     stage('docker build'){
