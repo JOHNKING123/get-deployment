@@ -5,7 +5,7 @@ node {
     stage('Get Code') {
         echo env.helloStr
         echo "test1"
-        git credentialsId: '641bff4f-fa03-443e-81f4-b01bb9e8b769', url: 'https://github.com/JOHNKING123/DataSearcher.git'
+        git credentialsId: 'e10fe825-e885-4ddf-bc96-30dbc30f94dd', url: 'https://github.com/JOHNKING123/DataSearcher.git'
     }
 
     stage('Maven build'){
