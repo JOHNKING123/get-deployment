@@ -22,7 +22,7 @@ node {
     }
 
     stage("Restart app") {
-        def ANSIBLE_PATH = '../get-deployment/ansible'
+        def ANSIBLE_PATH = '../get-development/ansible'
         dir(ANSIBLE_PATH) {
             sh "ansible-playbook -i hosts datasearch.yml"
         }
