@@ -9,7 +9,8 @@ node {
     }
 
     stage('Maven build'){
-        def packagePath = 'com.zhengcq:datasercher'
+        //def packagePath = 'com.zhengcq:datasercher'
+        def packagePath = 'datasercher'
         withMaven(jdk:'jdk1.8', maven:'maven') {
             sh "mvn package -pl ${packagePath} -am -Dmaven.test.skip=true -e"
         }
