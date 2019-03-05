@@ -10,6 +10,7 @@ node {
     def BUILD_ACTION = env.BUILD_ACTION ?: 'build,restart'
     def DO_BUILD = BUILD_ACTION.contains("build")
     def DO_RESTART = BUILD_ACTION.contains("restart")
+    def DO_PUSH = BUILD_ACTION.contains("push")
 
     def SERVICE_DEF = [
 
@@ -39,7 +40,10 @@ node {
             def strImgTagId = "johnking123/${SERVICE}:${VERSION}"
             def strJarFile = "./target/${project}-1.0-SNAPSHOT.jar"
             sh "docker build -t ${strImgTagId} --build-arg JAR_FILE=${strJarFile} ${packagePath}"
-            sh "docker push ${strImgTagId}"
+            if(DO_PUSH) {
+                sh "docker push ${strImgTagId}"
+            }
+
         }
     }
 
