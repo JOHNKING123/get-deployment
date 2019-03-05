@@ -56,7 +56,7 @@ node {
             def ansible_tag = "${SERVICE}-run"
             def envVar = "${SERVICE}-${TARGET_ENV}"
             dir(ANSIBLE_PATH) {
-                sh "ansible-playbook -i env/${envVar} service-tiger.yml --tags=${ansible_tag}"
+                sh "ansible-playbook -i env/${envVar} service-tiger.yml"
             }
         }
     }
