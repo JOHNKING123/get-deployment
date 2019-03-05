@@ -14,7 +14,11 @@ node {
 
     def SERVICE_DEF = [
 
-            'tg-config': [path: 'tg-config', project: 'tg-config']
+            'tg-config': [path: 'tg-config', project: 'tg-config'],
+            'tg-discovery': [path: 'tg-discovery', project: 'tg-discovery'],
+            'tg-client1': [path: 'tg-client1', project: 'tg-client1'],
+            'tg-client2': [path: 'tg-client2', project: 'tg-client2'],
+            'gateway': [path: 'tg-gateway', project: 'tg-gateway']
     ]
 
 
