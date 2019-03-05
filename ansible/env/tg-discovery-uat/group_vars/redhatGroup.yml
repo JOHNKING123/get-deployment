@@ -1,5 +1,4 @@
 app_env:
   ENV: uat
   HTTP_PORT: 9182
-  SERVICE_NAME: tg-config
-test_var1: 123123
+  SERVICE_NAME: tg-discovery
