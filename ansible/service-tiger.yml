@@ -1,4 +1,14 @@
-- hosts: localhost
-  roles:
-  - name: tiger
+- hosts: "{{ hosts | default('redhatGroup') }}"
+  user: root
+  gather_facts: no
+  vars:
+    skip_remove_apps: false
+    skip_create_apps: false
+    skip_run_apps: false
+    # vars_files:
+    #   - env_vars/{{env | default('dev') }}.yml
 
+  environment: "{{app_env}}"
+
+  roles:
+    - role: tiger
