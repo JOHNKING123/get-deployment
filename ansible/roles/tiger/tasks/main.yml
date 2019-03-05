@@ -1,2 +1,12 @@
-- name: check_old_app_exist
+- name: test1
   debug: msg="The Value is {{ HTTP_PORT  }}"
+  ignore_errors: True
+- name: test2
+  debug: msg="The Value is {{ app_env.HTTP_PORT  }}"
+  ignore_errors: True
+- name: test3
+  debug: msg="The Value is {{ test_var  }}"
+  ignore_errors: True
+- name: test4
+  debug: msg="The Value is {{ test_var1  }}"
+  ignore_errors: True

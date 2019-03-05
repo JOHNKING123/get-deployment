@@ -1,10 +1,11 @@
-- hosts: "{{ hosts | default('redhatGroup') }}"
+- hosts: redhatGroup
   user: root
   gather_facts: no
   vars:
     skip_remove_apps: false
     skip_create_apps: false
     skip_run_apps: false
+    test_var: haahhah
     # vars_files:
     #   - env_vars/{{env | default('dev') }}.yml
 
