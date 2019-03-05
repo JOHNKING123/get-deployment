@@ -1,6 +1,5 @@
 - hosts: localhost
   user: root
-  gather_facts: no
   vars:
     skip_remove_apps: false
     skip_create_apps: false
