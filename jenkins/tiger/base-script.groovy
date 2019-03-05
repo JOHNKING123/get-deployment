@@ -26,6 +26,7 @@ node {
     stage('Maven build'){
         //def packagePath = 'com.zhengcq:datasercher'
         def packagePath = SERVICE_DEF[SERVICE]["path"]
+        echo packagePath
         withMaven(jdk:'jdk1.8', maven:'maven') {
             sh "mvn package -pl ${packagePath} -am -Dmaven.test.skip=true -e"
         }
@@ -38,7 +39,7 @@ node {
             def strImgTagId = "johnking123/${SERVICE}:${VERSION}"
             def strJarFile = "./target/${project}-1.0-SNAPSHOT.jar"
             def img = docker.build(strImgTagId, "--build-arg JAR_FILE=${strJarFile} ${packagePath}")
-            img.push()
+            sh "docker push ${strImgTagId}"
         }
     }
 
