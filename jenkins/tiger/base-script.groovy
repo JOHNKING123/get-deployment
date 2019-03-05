@@ -38,7 +38,7 @@ node {
             def packagePath = SERVICE_DEF[SERVICE]["path"]
             def strImgTagId = "johnking123/${SERVICE}:${VERSION}"
             def strJarFile = "./target/${project}-1.0-SNAPSHOT.jar"
-            def img = docker.build(strImgTagId, "--build-arg JAR_FILE=${strJarFile} ${packagePath}")
+            sh "docker build -t ${strImgTagId} --build-arg JAR_FILE=${strJarFile} ${packagePath}"
             sh "docker push ${strImgTagId}"
         }
     }
