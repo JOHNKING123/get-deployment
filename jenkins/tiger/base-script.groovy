@@ -44,6 +44,19 @@ node {
     }
 
 
-    
+    // 调用ansible启动服务
+    if(DO_RESTART) {
+        // 调用ansible启动服务
+        stage("Restart app") {
+            def ANSIBLE_PATH = '../get-development/ansible'
+            def ansible_tag = "${SERVICE}-run"
+            def envVar = "${SERVICE}-${TARGET_ENV}"
+            dir(ANSIBLE_PATH) {
+                sh "ansible-playbook -i env/${envVar} services-tiger.yml --tags=${ansible_tag}"
+            }
+        }
+    }
+
+
 
 }

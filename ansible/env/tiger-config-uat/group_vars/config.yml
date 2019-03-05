@@ -1,0 +1,4 @@
+app_env:
+  ENV: uat
+  HTTP_PORT: 9181
+  SERVICE_NAME: tg-config
