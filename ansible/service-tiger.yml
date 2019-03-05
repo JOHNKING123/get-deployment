@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: redhatGroup
   user: root
   vars:
     skip_remove_apps: false
