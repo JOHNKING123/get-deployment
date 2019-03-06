@@ -2,3 +2,4 @@ app_env:
   ENV: uat
   HTTP_PORT: 9183
   SERVICE_NAME: tg-client1
+  NETWORK_NAME: client1

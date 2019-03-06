@@ -13,7 +13,7 @@
 - name: print_var
   shell: echo {{ appContainerId }}
 - name: create_app
-  shell: 'docker run -d -p {{ app_env.HTTP_PORT }}:{{ app_env.HTTP_PORT  }} --name {{ app_env.SERVICE_NAME  }} johnking123/{{ app_env.SERVICE_NAME  }}'
+  shell: 'docker run -d -p {{ app_env.HTTP_PORT }}:{{ app_env.HTTP_PORT  }} --name {{ app_env.SERVICE_NAME  }} --network tg_network --network-alias {{ app_env.NETWORK_NAME  }} johnking123/{{ app_env.SERVICE_NAME  }}'
 - name: remove_old_images
   shell: docker images|grep none|xargs docker rmi -f
   ignore_errors: True
