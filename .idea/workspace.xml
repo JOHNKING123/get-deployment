@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c63d16fa-7825-4a79-a80a-8ed86b31ff27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ansible/env/gateway-uat/group_vars/redhatGroup.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ansible/env/gateway-uat/inventory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ansible/env/tg-client2-uat/group_vars/redhatGroup.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ansible/env/tg-client2-uat/inventory" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/env/gateway-uat/group_vars/redhatGroup.yml" afterPath="$PROJECT_DIR$/ansible/env/gateway-uat/group_vars/redhatGroup.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="base-script.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jenkins/tiger/base-script.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+            <state relative-caret-position="16">
+              <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -80,8 +77,8 @@
       <file leaf-file-name="redhatGroup.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ansible/env/gateway-uat/group_vars/redhatGroup.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="46">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -118,6 +115,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tg-client2</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -411,12 +413,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551756165451</updated>
       <workItem from="1551756167873" duration="11482000" />
-      <workItem from="1551772835312" duration="10163000" />
+      <workItem from="1551772835312" duration="11526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21645000" />
+    <option name="totallyTimeSpent" value="23008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -705,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/tiger/base-script.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ansible/env/tg-client2-uat/inventory">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -737,10 +731,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/tiger/base-script.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ansible/env/gateway-uat/group_vars/redhatGroup.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="46">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
