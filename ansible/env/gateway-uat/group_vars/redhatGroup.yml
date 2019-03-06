@@ -1,0 +1,5 @@
+app_env:
+  ENV: uat
+  HTTP_PORT: 98888
+  SERVICE_NAME: gateway
+  NETWORK_NAME: gateway
