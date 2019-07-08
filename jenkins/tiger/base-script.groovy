@@ -25,7 +25,7 @@ node {
     stage('Get Code') {
         echo env.helloStr
         echo "test1"
-        git credentialsId: 'ec16415a-efab-484c-b9c8-2a445d368ab3', url: 'https://github.com/JOHNKING123/Tiger.git',branch: BRANCH
+        git credentialsId: 'github', url: 'https://github.com/JOHNKING123/Tiger.git',branch: BRANCH
     }
 
     stage('Maven build'){
