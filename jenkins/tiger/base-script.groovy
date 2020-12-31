@@ -38,7 +38,7 @@ node {
 
     }
 
-    docker.withRegistry('', '652c17d0-7371-4def-b6c7-c99406afd92d') {
+    docker.withRegistry('', 'dockerhub') {
         stage("Build Docker") {
             def project = SERVICE_DEF[SERVICE]["project"]
             def packagePath = SERVICE_DEF[SERVICE]["path"]
