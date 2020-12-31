@@ -37,6 +37,7 @@ node {
         }
 
     }
+    // dockerhub 是docker hub  的凭证 描述
     docker.withRegistry('', 'dockerhub') {
         stage("Build Docker") {
             def project = SERVICE_DEF[SERVICE]["project"]
